@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
+.wp-block-create-block-call-to-action {
+	// border: 1px dotted rgb(1, 1, 1);
+	h1 {
+		margin: 0;
+	}
+
+}
+
+.call-to-action-link-form {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-top: 10px;
+
+	form {
+		display: flex;
+		align-items: center;
+
+		input {
+			border: 1px solid #a8a8a8 !important;
+			border-radius: 5px !important;
+		}
+	}
+}

@@ -1,0 +1,120 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "create-block/call-to-action",
+	"version": "0.1.0",
+	"title": "Call-to-action",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"keywords": ["text", "paragraph", "box"],
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": false,
+			"gradients": true
+		},
+		"spacing": {
+			"padding": true
+		}
+	},
+	"styles": [
+		{
+			"name": "squared",
+			"label": "Squared",
+			"isDefault": true
+		},
+		{
+			"name": "rounded",
+			"label": "Rounded"
+		}
+	],
+	"example": {
+		"attributes": {
+			"text": "This is a call to action",
+			"gradient": "red-to-blue",
+			"shadow": true
+		}
+	},
+	"textdomain": "call-to-action",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"linkText": {
+			"type": "string",
+			"source": "html",
+			"selector": "button",
+			"default": "Link Text"
+		},
+		"buttonTextColor": {
+			"type": "string"
+		},
+		"buttonBackgroundColor": {
+			"type": "string",
+			"default": "red"
+		},
+		"titleText": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2"
+		},
+		"descriptionText": {
+			"type": "string",
+			"source": "html",
+			"selector": "p"
+		},
+		"titleTextColor":{
+			"type": "string",
+			"default": "white"
+		},
+		"descriptionTextColor":{
+			"type": "string",
+			"default": "white"
+		},
+		"textAlignment": {
+			"type": "string",
+			"default": "left"
+		},
+		"fontSize": {
+			"type": "string",
+			"default": "size-normal"
+		},
+		"buttonSize": {
+			"type": "string",
+			"default": "size-normal"
+		},
+		"borderRadius": {
+			"type": "string",
+			"default": "border-radius-rounded"
+		},
+		"shadow": {
+			"type": "boolean",
+			"default": false
+		},
+		"shadowOpacity": {
+			"type": "number",
+			"default": 30
+		},
+		"links": {
+			"type": "boolean",
+			"default": false
+		},
+		"buttonUrl": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "a",
+			"attribute": "href"
+		},
+		"buttonTarget": {
+			"type": "boolean",
+			"default": true
+		},
+		"style": {
+			"type": "object",
+			"margin": "value",
+			"default": {}
+		}
+	}
+}
